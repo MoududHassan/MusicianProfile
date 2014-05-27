@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/Musician_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Musician Page"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+   <RelativeLayout
+       android:id="@+id/inner_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/Musician_title"
+    android:padding="10dp"
+    android:background="@android:color/darker_gray" >
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="20dp"
+	        android:text="Artist Name"/>
+    
+	    <TextView
+	        android:id="@+id/fan_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"        
+	        android:layout_marginRight="10dp"        
+	        android:textSize="20dp"
+	        android:textColor="@android:color/holo_orange_dark"
+	        android:text="2" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/fan_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inner_layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Fan Page"
+        android:background="#dddddd" />
+    <Button
+        android:id="@+id/performance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fan_page"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Performance" 
+        android:background="#dddddd"/>
+    <Button
+        android:id="@+id/music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/performance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Music"
+        android:background="#dddddd" />
+    <Button
+        android:id="@+id/broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Broadcast"
+        android:background="#dddddd" />
+    <RelativeLayout
+       android:id="@+id/inner_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:layout_below="@+id/broadcast"
+    android:background="@android:color/holo_red_dark" >
+	    <TextView
+	        android:id="@+id/Request"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:layout_centerInParent="true"
+	        android:textSize="20dp"
+	        android:text="Requests"/>
+    
+	    <TextView
+	        android:id="@+id/request_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"        
+	        android:layout_marginRight="10dp"        
+	        android:textSize="20dp"
+	        android:textColor="@android:color/white"
+	        android:text="2" />
+    </RelativeLayout>
+</RelativeLayout>

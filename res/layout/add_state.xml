@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/performance_setup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Performance State"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner 
+        android:id="@+id/state_spinner"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/performance_setup_title"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <Button 
+        android:id="@+id/date_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
