@@ -1,6 +1,7 @@
 package com.avijit.musicianprofile;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -8,7 +9,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class Credential extends Activity{
+public class Usertype extends Activity{
 
 	Button confirm_credential;
 	Spinner credential_spinner;
@@ -18,12 +19,12 @@ public class Credential extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.credential);
+		setContentView(R.layout.usertype);
 		
 		confirm_credential = (Button) findViewById(R.id.credential_confirm);
 		credential_spinner = (Spinner) findViewById(R.id.credential_spinner);
 		
-		String[] states = new String[3];
+		String[] states = new String[2];
 		states[0] = "Fan";
 		states[1] = "Musician";
 		
@@ -42,9 +43,16 @@ public class Credential extends Activity{
 						String selected_credential = credential_spinner.getSelectedItem().toString();
 						Toast toast = Toast.makeText(getApplicationContext(), selected_credential, Toast.LENGTH_SHORT);
 						 toast.show();
-						 /*Intent intent = new Intent(getApplicationContext(),
-									Usertype.class);
-							startActivity(intent);*/
+						
+						 if(selected_credential == "Fan"){
+							 Intent intent = new Intent(getApplicationContext(),
+										Performances.class);
+								startActivity(intent);
+						 }else{
+							 Intent intent = new Intent(getApplicationContext(),
+									 Musician_type.class);
+								startActivity(intent);
+						 }
 					}
 				});
 		
