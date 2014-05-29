@@ -19,6 +19,9 @@ public class ArtistName extends Activity {
 	ArrayAdapter<String> artistNameAdapter;
 	String retrievevalue;
 
+
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
